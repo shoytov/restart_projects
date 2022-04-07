@@ -1,0 +1,14 @@
+#!/bin/bash
+
+prefix=${PREFIX}
+
+arr=(`echo ${PROJECTS}`)
+
+for i in "${arr[@]}"
+    do
+    	path="${prefix}$i"
+        echo ${path}
+        # cd "${path}"
+        # docker-compose stop
+        # docker-compose up -d
+    done
